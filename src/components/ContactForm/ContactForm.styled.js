@@ -8,7 +8,7 @@ export const Form = styled.form`
   flex-direction: column;
   align-items: flex-start;
   gap: 15px;
-  width: 50%;
+  width: 200px;
 `;
 
 export const Label = styled.label`
@@ -28,7 +28,7 @@ export const Submit = styled.button`
   border-radius: 3px;
   padding: 3px;
   &:hover,
-  &:active ${'' /* &:focus  */} {
+  &:active {
     background-color: teal;
   }
 `;
