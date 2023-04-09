@@ -13,7 +13,7 @@ export class App extends Component {
 
   addContact = text => {
     const isDuplicate = this.state.contacts.some(
-      contact => contact.text.name === text.name
+      contact => contact.text.name.toLowerCase() === text.name.toLowerCase()
     );
     if (isDuplicate) {
       alert(`${text.name} is already in contacts`);
